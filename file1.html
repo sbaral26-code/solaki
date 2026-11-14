@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechPulse AI | Currents in Artificial Intelligence</title>
+  <link rel="stylesheet" href="file2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Tech<span>Pulse</span>.AI</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#intro">Overview</a></li>
+          <li><a href="#news">Latest Briefs</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="festive-btn" aria-label="Toggle festive glow theme">
+        <span class="diya-flame">🪔</span>
+        <span id="themeToggleText">Festive Glow</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero & Festive Intro Section -->
+  <section id="intro" class="hero-section">
+    <canvas id="heroCanvas"></canvas>
+
+    <!-- Ornate Festive Edge & Corner Decorations -->
+    <div class="edge-decorations" aria-hidden="true">
+      <div class="toran-garland"></div>
+      <div class="corner-decor corner-tl"></div>
+      <div class="corner-decor corner-tr"></div>
+      <div class="corner-decor corner-bl"></div>
+      <div class="corner-decor corner-br"></div>
+    </div>
+
+    <div class="container hero-content">
+      <span class="badge">Festive Edition • November 2026</span>
+      <h1>Illuminating the Future: Intelligence in Transition</h1>
+      <p class="intro-paragraph">
+        As the vibrant lamps of <strong>Diwali</strong> continue to inspire warmth and renewal this November, the world of technology witnesses its own radiant transformation. Just as traditional <em>diyas</em> dispel darkness, breakthroughs in sovereign Indian language models, autonomous power grids, and chip-level AI governance are shedding light on once-intractable frontiers. This season marks an era where foundational research translates directly into everyday human empowerment.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Real-Time Tech Briefings</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Policy & Research Digests</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Zero</span>
+          <span class="stat-label">Clickbait Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Affairs Feed Section -->
+  <main id="news" class="container news-section">
+    <div class="section-header">
+      <h2>Current Affairs in AI & Tech</h2>
+      <div class="filter-controls">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="models">Generative Models</button>
+        <button class="filter-btn" data-category="hardware">Hardware & Energy</button>
+        <button class="filter-btn" data-category="policy">Policy & Ethics</button>
+      </div>
+    </div>
+
+    <div class="news-grid" id="newsGrid">
+      <!-- Note 1: The Hindu -->
+      <article class="card" data-category="models">
+        <div class="card-badge">The Hindu • Agri-Tech & AI</div>
+        <h3>ISRO and IMD Launch Hyper-Local AI Monsoon Forecaster for District Farmers</h3>
+        <p>Combining INSAT-3DS satellite telemetry with deep neural weather models, the new platform delivers 72-hour village-level rainfall and frost alerts directly via voice calls in 18 regional languages.</p>
+        <div class="card-footer">
+          <span class="date">Nov 12, 2026</span>
+          <button class="read-more-btn" data-id="1">Read More</button>
+        </div>
+      </article>
+
+      <!-- Note 2: The Times of India -->
+      <article class="card" data-category="hardware">
+        <div class="card-badge">Times of India • Semiconductors</div>
+        <h3>Dholera Fab Rolls Out First Batch of Indigenous 28nm Edge-AI Microcontrollers</h3>
+        <p>India’s semiconductor milestone clears reliability trials as domestic automotive and smart-meter manufacturers begin integrating locally fabricated neural chips into next-generation hardware.</p>
+        <div class="card-footer">
+          <span class="date">Nov 11, 2026</span>
+          <button class="read-more-btn" data-id="2">Read More</button>
+        </div>
+      </article>
+
+      <!-- Note 3: The Indian Express -->
+      <article class="card" data-category="policy">
+        <div class="card-badge">The Indian Express • Digital Banking</div>
+        <h3>RBI Mandates AI Explainability Audits for Automated Credit and Loan Scoring</h3>
+        <p>To prevent algorithmic bias against first-time rural borrowers, the central bank directs commercial lenders and fintech apps to provide transparent, human-verifiable rejection reasons within 48 hours.</p>
+        <div class="card-footer">
+          <span class="date">Nov 10, 2026</span>
+          <button class="read-more-btn" data-id="3">Read More</button>
+        </div>
+      </article>
+
+      <!-- Note 4: Mint -->
+      <article class="card" data-category="hardware">
+        <div class="card-badge">Mint • Clean Energy & Compute</div>
+        <h3>Hyperscale AI Data Centres in Navi Mumbai and Chennai Shift to Green Hydrogen Microgrids</h3>
+        <p>Faced with surging GPU cluster power demands, major cloud operators sign long-term green hydrogen and battery-storage agreements to run round-the-clock carbon-neutral AI training hubs.</p>
+        <div class="card-footer">
+          <span class="date">Nov 9, 2026</span>
+          <button class="read-more-btn" data-id="4">Read More</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Newsletter Signup -->
+  <section id="newsletter" class="newsletter-section">
+    <div class="container newsletter-box">
+      <h3>Stay Ahead of the Curve</h3>
+      <p>Subscribe to receive concise daily current affairs digests on AI, policy, and frontier engineering.</p>
+      <form id="subscribeForm" class="subscribe-form">
+        <input type="email" id="emailInput" placeholder="Enter your email address" required>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+      <div id="formFeedback" class="form-feedback"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 TechPulse AI. Curated Technology & Policy Current Affairs.</p>
+    </div>
+  </footer>
+
+  <!-- Modal for Full Newspaper Brief -->
+  <div id="articleModal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <span id="modalSource" class="modal-source">Newspaper Brief</span>
+      <h3 id="modalTitle">Article Title</h3>
+      <p id="modalBody">Detailed narrative goes here...</p>
+    </div>
+  </div>
+
+  <script src="file3.js"></script>
+</body>
+</html>
